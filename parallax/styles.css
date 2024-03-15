@@ -1,0 +1,131 @@
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Euclid Circular A", "Poppins";
+  color: #f9f9f9;
+  background: #09090b;
+  text-align: center;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  width: 100%;
+  height: 56px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+  background: #4fffd0;
+  color: rgb(0 0 0 / 96%);
+  transition: 0.3s;
+}
+
+header > h1 {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  background: #000;
+  color: #4fffd0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header nav > a {
+  text-decoration: none;
+  font-weight: 500;
+  height: 72px;
+  color: inherit;
+  display: grid;
+  place-items: center;
+}
+
+header nav > a:hover {
+  color: rgb(255 255 255 / 96%);
+}
+
+header span.material-symbols-outlined {
+  font-size: 26px;
+  width: 32px;
+}
+
+.panel img {
+  width: 170px;
+  height: 170px;
+}
+
+h2 {
+  margin: 50px 0 20px;
+}
+
+p {
+  opacity: 0.66;
+  font-size: 16px;
+}
+
+.panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 80px;
+  width: 100vw;
+}
+
+.container .panel {
+  flex-direction: row;
+  gap: 40px;
+  text-align: left;
+}
+
+.container .panel img {
+  translate: 0 16px;
+}
+
+.container h2 {
+  margin: 0 0 10px;
+}
+
+.container p {
+  margin: 0;
+}
+
+.container .panel:nth-child(odd) {
+  background: #111114;
+}
