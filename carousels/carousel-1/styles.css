@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #fbfaff;
+  font-family: "Euclid Circular A";
+  text-align: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 510px;
+  padding: 48px 0 42px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px -6.8px 9.8px rgba(0, 0, 0, 0.003),
+    0px -10.8px 23.5px rgba(0, 0, 0, 0.008),
+    0px -10.3px 44.3px rgba(0, 0, 0, 0.016),
+    0px -1.5px 79.1px rgba(0, 0, 0, 0.026),
+    0px 28.5px 147.9px rgba(0, 0, 0, 0.042), 0px 174px 354px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+  color: #2f2e41;
+  margin: 0 0 6px;
+}
+
+h3 {
+  color: #69687a;
+  margin: 0 0 24px;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: stretch;
+}
+
+input,
+button {
+  display: block;
+  width: 240px;
+  height: 44px;
+  margin: 0 70px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  outline-color: #6b63ff;
+  text-align: center;
+}
+
+input {
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.16);
+  padding: 12px;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.24);
+}
+
+button {
+  background: #6b63ff;
+  color: #f9f9f9;
+  border: 0;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: grab;
+}
+
+.signup {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.signup .swiper-pagination > .swiper-pagination-bullet {
+  box-shadow: none;
+  background: #6b63ff;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+
+.signup img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+}

@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
   </head>
   <body>
     <aside class="sidebar">
@@ -25,22 +30,28 @@
           className="sidebar-burger"
           onClick="toggleSidebar()"
         >
-          <span class="material-symbols-outlined"> menu </span>
+          <i class="ai-three-line-horizontal"></i>
         </button>
         <img src="logo.svg" />
       </header>
       <ul>
         <li>
           <button type="button" onclick="onClick(this)">
-            <span class="material-symbols-outlined">home</span>
+            <i class="ai-home-alt1"></i>
             <p>Home</p>
           </button>
         </li>
         <li>
           <button type="button" onclick="onClick(this)">
-            <span class="material-symbols-outlined">settings</span>
+            <i class="ai-dashboard"></i>
+            <p>Dashboard</p>
+          </button>
+        </li>
+        <li>
+          <button type="button" onclick="onClick(this)">
+            <i class="ai-gear"></i>
             <p>Settings</p>
-            <span class="material-symbols-outlined">expand_more</span>
+            <i class="ai-chevron-down-small"></i>
           </button>
           <div class="sub-menu">
             <ul>
@@ -58,9 +69,9 @@
         </li>
         <li>
           <button type="button" onclick="onClick(this)">
-            <span class="material-symbols-outlined">add_box</span>
+            <i class="ai-folder-add"></i>
             <p>Create</p>
-            <span class="material-symbols-outlined">expand_more</span>
+            <i class="ai-chevron-down-small"></i>
           </button>
           <div class="sub-menu">
             <ul>
@@ -81,9 +92,9 @@
         </li>
         <li>
           <button type="button" onclick="onClick(this)">
-            <span class="material-symbols-outlined">person</span>
+            <i class="ai-person"></i>
             <p>Profile</p>
-            <span class="material-symbols-outlined">expand_more</span>
+            <i class="ai-chevron-down-small"></i>
           </button>
           <div class="sub-menu">
             <ul>
@@ -98,13 +109,19 @@
         </li>
         <li>
           <button type="button" onclick="onClick(this)">
-            <span class="material-symbols-outlined">inventory_2</span>
+            <i class="ai-bell"></i>
+            <p>Notifications</p>
+          </button>
+        </li>
+        <li>
+          <button type="button" onclick="onClick(this)">
+            <i class="ai-cart"></i>
             <p>Products</p>
           </button>
         </li>
         <li>
           <button type="button" onclick="onClick(this)">
-            <span class="material-symbols-outlined">lock</span>
+            <i class="ai-lock-on"></i>
             <p>Account</p>
           </button>
         </li>

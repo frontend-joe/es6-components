@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-image: url("bg.jpeg");
+  background-image: url("bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -32,7 +32,7 @@ button {
   border-radius: 16px;
   padding: 0 16px;
   border: 1px solid rgb(255 255 255 / 8%);
-  background: rgb(0 0 0 / 30%);
+  background: rgb(0 0 0 / 40%);
   backdrop-filter: blur(20px);
   transition: width 0.4s;
 }
@@ -43,15 +43,14 @@ button {
   height: 72px;
   padding: 0 1.25rem 0 0;
   border-bottom: 1px solid rgb(255 255 255 / 8%);
-  color: #e1ecff;
 }
 
 .sidebar header button {
-  width: 54px;
+  width: 52px;
 }
 
 .sidebar header img {
-  height: 22px;
+  height: 24px;
 }
 
 .sidebar button {
@@ -67,8 +66,7 @@ button {
   font-weight: 400;
   line-height: 1;
   padding: 0 16px;
-  color: #e1ecff;
-  transition: background 0.3s;
+  color: rgb(255 255 255 / 95%);
 }
 
 .sidebar button p:nth-child(2) {
@@ -76,20 +74,19 @@ button {
 }
 
 .sidebar button:is(.active, :hover) {
-  background: #4e3ffb;
-  color: #e1ecff;
+  background: rgb(0 0 0 / 30%);
 }
 
-.sidebar button span {
+.sidebar button i {
   transition: 0.3s;
 }
 
-.sidebar button.active > span:nth-child(3) {
+.sidebar button.active > i:nth-child(3) {
   rotate: -180deg;
 }
 
 .sidebar button:not(.active):hover {
-  background: rgb(255 255 255 / 4%);
+  background: rgb(0 0 0 / 10%);
 }
 
 .sidebar ul {
@@ -115,14 +112,14 @@ button {
 }
 
 .sub-menu button {
-  padding-left: 54px;
+  padding-left: 52px;
 }
 
 .sub-menu button::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 22px;
+  left: 24px;
   translate: 0 -50%;
   width: 5px;
   height: 5px;
@@ -132,4 +129,11 @@ button {
 
 .sidebar .material-symbols-outlined {
   font-size: 16px;
+}
+
+.sidebar i {
+  font-size: 20px;
+  width: 20px;
+  max-width: 20px;
+  min-width: 20px;
 }
