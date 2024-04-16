@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #151515;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.textbox :is(label, span) {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  pointer-events: none;
+  color: #888888;
+  transition: 0.3s;
+}
+
+.textbox > label {
+  left: 44px;
+  translate: 0 -50%;
+  padding: 4px 8px;
+}
+
+.textbox > .icon {
+  z-index: 2;
+  left: 16px;
+  font-size: 26px;
+}
+
+.textbox > input {
+  height: 56px;
+  width: 240px;
+  padding-left: 48px;
+  border: 2px solid #292929;
+  border-radius: 8px;
+  outline: none;
+  background: transparent;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.textbox > input.valid.has-value {
+  border-color: #14ca99;
+}
+
+.textbox > :is(input:focus, .has-value) {
+  border-color: #d3d3d3;
+}
+
+.textbox > input.has-value {
+  border-color: #ff5360;
+}
+
+.textbox > :is(input:focus, .has-value) ~ span {
+  color: #f9f9f9;
+}
+
+.textbox > :is(input:focus, .has-value) ~ label {
+  background: #151515;
+  color: rgba(255, 255, 255, 0.75);
+  translate: -42px -42px;
+  scale: 0.8;
+}
+
+@keyframes spin {
+  100% {
+    rotate: 1turn;
+  }
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  translate: 0 -50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid rgb(255 255 255 / 14%);
+  border-top-color: #f7f7f7;
+  opacity: 0;
+  animation: spin 1s infinite linear;
+}
+
+.spinner.visible {
+  opacity: 1;
+}
+
+button {
+  width: 240px;
+  height: 56px;
+  border-radius: 6px;
+  border: 0;
+  font-family: inherit;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  justify-content: space-between;
+  background: #2e3231;
+  color: #f7f7f7;
+  transition: 0.3s;
+}
+
+button:disabled {
+  opacity: 0.33;
+}
