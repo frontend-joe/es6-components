@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dropdown 6</title>
+  </head>
+  <body>
+    <nav>
+      <a
+        class="dropdown-button"
+        onmouseenter="toggleMenuOpen(true)"
+        onmouseleave="toggleMenuOpen(false)"
+      >
+        Skills
+        <span class="material-symbols-outlined"> expand_more </span>
+      </a>
+      <a> About </a>
+      <a> Portfolio </a>
+      <span class="material-symbols-outlined"> settings </span>
+    </nav>
+    <div
+      onmouseenter="toggleMenuOpen(true)"
+      onmouseleave="toggleMenuOpen(false)"
+      class="menu"
+    >
+      <div class="menu-buttons">
+        <button class="active" onclick="toggleMenuBlock(this, 0)">
+          <span class="material-symbols-outlined"> deployed_code </span>
+          Coding
+        </button>
+        <button onclick="toggleMenuBlock(this, 1)">
+          <span class="material-symbols-outlined"> palette </span> Design
+        </button>
+        <button onclick="toggleMenuBlock(this, 2)">
+          <span class="material-symbols-outlined"> dns </span> DevOps
+        </button>
+      </div>
+      <div id="menuContent" class="menu-content">
+        <div class="menu-block">
+          <p>React</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>TypeScript</p>
+          <p>ECMAScript</p>
+          <p>Vue</p>
+          <p>Svelte</p>
+          <p>Angular</p>
+        </div>
+        <div class="menu-block">
+          <p>Figma</p>
+          <p>Photoshop</p>
+          <p>Adobe XD</p>
+          <p>Sketch</p>
+          <p>InVision</p>
+          <p>EdrawMax</p>
+          <p>After Effects</p>
+          <p>Jitter</p>
+          <p>Spline</p>
+        </div>
+        <div class="menu-block">
+          <p>Netlify</p>
+          <p>Vercel</p>
+          <p>Heroku</p>
+          <p>GitHub</p>
+          <p>Bit Bucket</p>
+          <p>npm</p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

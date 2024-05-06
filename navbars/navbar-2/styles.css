@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #09090b;
+  color: #faf9f5;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+:root {
+  --color-primary: #4b6aff;
+  --sidebar-width: 150px;
+  --menu-height: 140px;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: var(--color-primary);
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 20px 30px rgba(57, 76, 96, 0.06);
+}
+
+nav > span {
+  margin-left: auto;
+  font-size: 22px !important;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  padding: 0 10px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+nav > img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+nav > a {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  gap: 3px;
+  height: 60px;
+  padding: 0 16px 0 0;
+}
+
+.menu {
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  width: 100vh;
+  height: var(--menu-height);
+  background: #1d1d20;
+  opacity: 0;
+  visibility: hidden;
+  /* opacity: 1;
+  visibility: visible; */
+  translate: 0 -20px;
+  box-shadow: 0 20px 30px rgba(57, 76, 96, 0.06);
+  transition: 0.3s;
+}
+
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
+}
+
+body.open .dropdown-button,
+nav a:hover {
+  opacity: 1;
+}
+
+nav span {
+  transition: 0.3s;
+}
+
+.dropdown-button > span {
+  margin-right: -2px;
+}
+
+body.open .dropdown-button span {
+  rotate: -180deg;
+}
+
+.menu-buttons {
+  margin: 12px 0;
+  padding: 0 12px;
+  display: grid;
+  gap: 4px;
+  place-items: center;
+  border-right: 1px solid rgb(255 255 255 / 8%);
+  width: var(--sidebar-width);
+}
+
+.menu-buttons button {
+  margin: 0;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 10px;
+  background: transparent;
+  border-radius: 6px;
+  border: 0;
+  color: #f9f9f9;
+  display: flex;
+  gap: 6px;
+  opacity: 0.7;
+  align-items: center;
+  font-weight: 400;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+.menu-buttons button span {
+  font-size: 16px;
+}
+
+.menu-buttons button.active {
+  opacity: 1;
+}
+
+.menu-buttons button.active {
+  background: var(--color-primary);
+}
+
+.menu-buttons button:hover:not(.active) {
+  background: #2b2e35;
+  cursor: pointer;
+}
+
+.menu-content {
+  position: absolute;
+  top: 0;
+  left: var(--sidebar-width);
+  height: calc(var(----menu-height) * 3);
+  padding-left: 30px;
+  transition: 0.6s;
+}
+
+.menu-content p {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+  margin: 0;
+  color: #f9f9f9;
+}
+
+.menu-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 41px;
+  align-content: center;
+  gap: 0 30px;
+  height: var(--menu-height);
+}
