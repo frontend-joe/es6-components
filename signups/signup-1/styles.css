@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: #000000;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Euclid Circular A";
+  color: rgb(255 255 255 / 50%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 30%);
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.control {
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: rgb(255 255 255 / 6%);
+  border-radius: 6px;
+  color: #f9f9f9;
+  margin: 8px 0;
+  font-family: inherit;
+  text-align: left;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+.login-card {
+  width: 320px;
+  padding: 100px 30px 32px;
+  border-radius: 1.25rem;
+  background: rgb(0 0 0 / 21%);
+  backdrop-filter: blur(26px);
+  text-align: center;
+}
+
+.login-card > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: #f9f9f9;
+}
+
+.login-card > h3 {
+  color: rgb(255 255 255 / 50%);
+  margin: 0 0 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.login-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+}
+
+.login-form input.control::placeholder {
+  color: rgb(255 255 255 / 25%);
+}
+
+.login-form > button.control {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #3a75dc;
+  color: #fff;
+  border: 0;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.375s;
+}
+
+.username {
+  position: relative;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#bars {
+  margin: 8px 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgb(255 255 255 / 6%);
+}
+
+#bars div {
+  height: 6px;
+  border-radius: 3px;
+  transition: 0.4s;
+  width: 0%;
+}
+
+#bars.weak div {
+  background: #d0424f;
+  width: 33.33%;
+}
+
+#bars.medium div {
+  background: #e58448;
+  width: 66.66%;
+}
+
+#bars.strong div {
+  background: #1eb965;
+  width: 100%;
+}
+
+.strength {
+  text-align: left;
+  height: 30px;
+  text-transform: capitalize;
+}

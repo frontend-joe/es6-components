@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signups</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-card">
+      <h2>Sign Up</h2>
+      <h3>Enter your credentials</h3>
+      <form class="login-form">
+        <input
+          autocomplete="off"
+          spellcheck="false"
+          class="control"
+          type="email"
+          placeholder="Email"
+          value="joe@gmail.com"
+        />
+        <input
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Password"
+          oninput="handleChange()"
+        />
+        <div id="bars">
+          <div></div>
+        </div>
+        <div class="strength" id="strength"></div>
+        <button class="control" type="button">Continue</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
