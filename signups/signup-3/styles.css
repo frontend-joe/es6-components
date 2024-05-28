@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  color: #2f2e41;
+  background: #f9f5ff;
+  font-family: "Euclid Circular A";
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 490px;
+  padding: 80px 0 0;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 20px 150px rgb(0 0 0 / 5%);
+}
+
+img {
+  margin: 0 auto 30px;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+h2 {
+  margin: 0 0 6px;
+}
+
+h3 {
+  color: #69687a;
+  margin: 0 0 24px;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: stretch;
+}
+
+input,
+button {
+  display: block;
+  height: 48px;
+  width: 270px;
+  margin: 0 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  text-align: center;
+}
+
+input {
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.16);
+  padding: 12px;
+  margin-bottom: 8px;
+  color: inherit;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-style: solid;
+  border-color: #c7c5d3;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.24);
+}
+
+button {
+  background: #6b63ff;
+  color: #f9f9f9;
+  border: 0;
+  cursor: pointer;
+  transition: 0.175s;
+}
+
+button:disabled {
+  background: #e1e0e8;
+  color: #bbbac5;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: transparent;
+  color: #7e7d8a;
+  margin-bottom: 8px;
+}
+
+button.secondary:hover {
+  background: #f7f7fb;
+  color: #68677c;
+}
+
+button[type="submit"] {
+  margin-bottom: 8px;
+}
+
+.swiper {
+  width: 100%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="card">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="1.svg" />
+            <h2>Welcome</h2>
+            <h3>Let's create your username</h3>
+            <input
+              spellcheck="false"
+              oninput="checkValid(event)"
+              type="text"
+              placeholder="e.g. johnsmith"
+            />
+            <button disabled type="button" onclick="gotoSlide(1)">Next</button>
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="2.svg" />
+            </div>
+            <h2>Security</h2>
+            <h3>Enter a strong password</h3>
+            <input
+              oninput="checkValid(event)"
+              type="password"
+              placeholder="Your password"
+            />
+            <button disabled type="button" onclick="gotoSlide(2)">Next</button>
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="3.svg" />
+            </div>
+            <h2>Finish</h2>
+            <h3>You're all good to go</h3>
+            <button class="secondary" onclick="restart()">Restart</button>
+            <button type="submit">Sign up</button>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
