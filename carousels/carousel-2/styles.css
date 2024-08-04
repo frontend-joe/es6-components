@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+:root {
+  --color-primary: #6b63ff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 360px;
-  height: 490px;
+  height: 520px;
   padding: 80px 0 0;
   border-radius: 10px;
   background: #ffffff;
@@ -29,7 +33,7 @@ body {
 }
 
 img {
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   width: 140px;
   height: 140px;
   object-fit: contain;
@@ -41,15 +45,14 @@ h2 {
 
 h3 {
   color: #69687a;
-  margin: 0 0 24px;
+  margin: 0 0 34px;
   font-weight: 400;
   font-size: 14px;
   align-self: stretch;
 }
 
-input,
-button {
-  display: block;
+button,
+input {
   height: 48px;
   width: 270px;
   margin: 0 40px;
@@ -79,7 +82,7 @@ input::placeholder {
 }
 
 button {
-  background: #6b63ff;
+  background: var(--color-primary);
   color: #f9f9f9;
   border: 0;
   cursor: pointer;
@@ -93,14 +96,9 @@ button:disabled {
 }
 
 button.secondary {
-  background: transparent;
-  color: #7e7d8a;
-  margin-bottom: 8px;
-}
-
-button.secondary:hover {
   background: #f7f7fb;
   color: #68677c;
+  margin-bottom: 8px;
 }
 
 button[type="submit"] {
@@ -108,5 +106,18 @@ button[type="submit"] {
 }
 
 .swiper {
+  height: 100%;
   width: 100%;
+}
+
+body .swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 42px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+body .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  scale: 1.5;
+  margin: 0 6px;
+  background: var(--color-primary);
 }

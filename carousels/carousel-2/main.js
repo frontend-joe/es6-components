@@ -1,7 +1,10 @@
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
   speed: 500,
   allowTouchMove: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
 const gotoSlide = (index) => {
