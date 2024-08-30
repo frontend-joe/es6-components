@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: #f9f9f9;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.banner {
+  position: relative;
+  height: 75vh;
+}
+
+.banner > header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 13%;
+}
+
+.banner > header img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+}
+
+.banner h2 {
+  margin: 0 0 10px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.banner h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+  color: #c2c5cf;
+}
+
+main {
+  position: relative;
+  padding: 50px 13%;
+  font-size: 30px;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: rgb(20, 22, 51, 0.7);
+  /* backdrop-filter: blur(15px); */
+}
+
+main p {
+  margin: 0 0 60px;
+  opacity: 1;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+main :is(h2, p) {
+  position: relative;
+  z-index: 1;
+}
+
+main h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95aa;
+  margin-bottom: 30px;
+}
+
+.bg-paroller {
+  position: fixed;
+  inset: -600px;
+  display: flex;
+}
