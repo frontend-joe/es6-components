@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  color: #f9f9f9;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 40px;
+  font-family: "Euclid Circular A", "Poppins", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parallax--hero {
+  letter-spacing: 3px;
+  background-color: #8f44fd;
+}
+.parallax--about {
+  background: #111114;
+}
+.parallax--features {
+  background: #8f44fd;
+}
+.parallax--footer {
+  background: #111114;
+}
