@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=download"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <h2>Students</h2>
+        <button type="button">
+          <span class="material-symbols-outlined"> download </span>
+          Download
+        </button>
+      </header>
+      <div class="wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Name
+                <span class="draggable" onmousedown="initResize(0)"></span>
+              </th>
+              <th>
+                Age
+                <span class="draggable" onmousedown="initResize(1)"></span>
+              </th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="cell-content">Joe Bloggs</span>
+              </td>
+              <td>
+                <span class="cell-content">21</span>
+              </td>
+              <td>
+                <span class="cell-content">Intermediate</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="cell-content">Harry Hill</span>
+              </td>
+              <td>
+                <span class="cell-content">24</span>
+              </td>
+              <td>
+                <span class="cell-content">Expert</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="cell-content">Bill Yates</span>
+              </td>
+              <td>
+                <span class="cell-content">34</span>
+              </td>
+              <td>
+                <span class="cell-content">Beginner</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="cell-content">Jane Doe</span>
+              </td>
+              <td>
+                <span class="cell-content">19</span>
+              </td>
+              <td>
+                <span class="cell-content">Expert</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="cell-content">Alice Gobel</span>
+              </td>
+              <td>
+                <span class="cell-content">32</span>
+              </td>
+              <td>
+                <span class="cell-content">Beginner</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="cell-content">Raul Jimenez</span>
+              </td>
+              <td>
+                <span class="cell-content">29</span>
+              </td>
+              <td>
+                <span class="cell-content">Intermediate</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

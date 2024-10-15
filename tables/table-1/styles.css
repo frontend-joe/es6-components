@@ -1,0 +1,101 @@
+body {
+  background: #f4f3f6;
+  color: #616678;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  height: 100vh;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.wrapper {
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 30px 40px rgb(97 102 120 / 12%);
+  padding: 24px;
+  font-size: 12px;
+  width: 460px;
+}
+
+.card header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 18px;
+}
+
+.card header button {
+  font-family: inherit;
+  background: #9159fe;
+  color: #f9f9f9;
+  border: 0;
+  border-radius: 20px;
+  padding: 6px 16px 6px 12px;
+  font-size: 12.5px;
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+}
+
+.card header button span {
+  font-size: 16px;
+  translate: 0 -0.5px;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.card table thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card table th {
+  font-weight: 400;
+  padding: 0 10px;
+  user-select: none;
+  text-transform: capitalize;
+  background: #f4f3f6;
+  color: rgb(97 102 120 / 75%);
+}
+
+.card table :is(th, td) {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 32px;
+  border: 1px solid #e9e5f3;
+}
+
+.card table .cell-content {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  translate: 0 -50%;
+}
+
+.card table th .draggable {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 6px;
+  cursor: col-resize;
+}
