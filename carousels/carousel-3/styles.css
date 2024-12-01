@@ -1,0 +1,131 @@
+body {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Euclid Circular A", "Poppins", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+/* ============ Full Page Slider ================= */
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+.slide-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-slide .overlay:before {
+  opacity: 0.8;
+  background: #1d1d1d;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.swiper-slide .slide-bg .slide-container {
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 7;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.slide-bg .slide-container .slide-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slide-container .slide-row .slider-content {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+  margin-left: 8.33333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.slider-content p {
+  font-size: 30px;
+  opacity: 0.65;
+  line-height: 1.6;
+  max-width: 760px;
+}
+
+.slider-content h3 {
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+.slider-content h2 {
+  font-size: 100px;
+  color: #fff;
+  margin: 0px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 0.2rem;
+}
+
+.swiper-pagination {
+  scale: 3.5;
+  bottom: 120px !important;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+.swiper-pagination-bullet {
+  background: #f9f9f9 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f9f9f9 !important;
+}
