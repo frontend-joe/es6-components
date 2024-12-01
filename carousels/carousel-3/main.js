@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper-container-h", {
+const swiper = new Swiper(".swiper", {
   speed: 750,
   parallax: true,
   autoplay: false,
@@ -7,9 +7,5 @@ const swiper = new Swiper(".swiper-container-h", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });

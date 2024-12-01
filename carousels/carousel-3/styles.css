@@ -52,7 +52,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
-.swiper-slide .overlay:before {
+.slide-bg:before {
   opacity: 0.8;
   background: #1d1d1d;
   content: "";
@@ -88,14 +88,14 @@ img {
 }
 
 .slider-content p {
-  font-size: 30px;
+  font-size: 18px;
   opacity: 0.65;
   line-height: 1.6;
   max-width: 760px;
 }
 
 .slider-content h3 {
-  font-size: 34px;
+  font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
@@ -106,7 +106,7 @@ img {
   margin-top: 0px;
 }
 .slider-content h2 {
-  font-size: 100px;
+  font-size: 50px;
   color: #fff;
   margin: 0px;
   font-weight: 500;
@@ -115,8 +115,8 @@ img {
 }
 
 .swiper-pagination {
-  scale: 3.5;
-  bottom: 120px !important;
+  scale: 2.5;
+  bottom: 60px !important;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
