@@ -1,0 +1,114 @@
+body {
+  color: #fff;
+  background-color: #010101;
+  font-family: "Euclid Circular A", "Poppins", sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+}
+
+.banner {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 15%;
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 100%) 75%);
+}
+
+footer {
+  position: relative;
+  display: flex;
+}
+
+.footer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 15% 0;
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 100%) 80%);
+}
+
+ul {
+  margin: 40px 0 0;
+  padding-left: 20px;
+}
+
+ul li {
+  height: 40px;
+  opacity: 0.5;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  opacity: 0.5;
+  margin: 4px 0;
+}
+
+p {
+  margin: 10px 0 0;
+  opacity: 0.5;
+  line-height: 1.45;
+}
+
+a {
+  color: inherit;
+}
+
+.row {
+  margin: 0 auto;
+  width: 600px;
+  height: 80vh;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.about {
+  margin-top: -100px;
+  max-width: 300px;
+}
+
+.about h2 {
+  font-size: 40px;
+}
+
+.ukiyo {
+  margin-top: 200px;
+}
+
+.image-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 0 !important;
+}
+
+.image-2 {
+  margin-top: -100px !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.image-3 {
+  width: 100%;
+  height: 75vh;
+}
