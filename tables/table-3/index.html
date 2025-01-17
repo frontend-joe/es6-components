@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Students</h2>
+      <button type="button">
+        <i
+          class="fa-solid fa-gear"
+          style="font-size: 11.5px; translate: 0 1px; margin-right: 1px"
+        ></i>
+        Actions
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+    </header>
+    <div class="card">
+      <div class="wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th onclick="sortRows('firstName', this)">
+                First Name
+                <i></i>
+              </th>
+              <th onclick="sortRows('lastName', this)">
+                Last Name
+                <i></i>
+              </th>
+              <th onclick="sortRows('level', this)">
+                Level
+                <i></i>
+              </th>
+              <th onclick="sortRows('age', this)">
+                Age
+                <i></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

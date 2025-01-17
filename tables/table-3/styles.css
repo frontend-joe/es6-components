@@ -1,0 +1,120 @@
+body {
+  background: #f4f3f6;
+  color: #616678;
+  margin: 0;
+  height: 100vh;
+  font-size: 110%;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.wrapper {
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+  margin: 0 0 18px;
+  padding: 0 50px 60px;
+  background: #5e26ec;
+}
+
+header button {
+  font-family: inherit;
+  background: rgb(0 0 0 / 16%);
+  color: #f9f9f9;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 12px 8px 12px;
+  font-size: 12.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+header button span {
+  font-size: 16px;
+  translate: 0 -0.5px;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #f9f9f9;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 30px 40px rgb(97 102 120 / 12%);
+  padding: 10px 18px;
+  font-size: 12px;
+  margin: -100px 30px 30px;
+}
+
+.card table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.card table thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card thead tr th:not(:last-child) {
+  width: 120px;
+  max-width: 120px;
+}
+
+.card table :is(th, td) {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 6px;
+  height: 40px;
+  font-size: 13px;
+}
+
+.card table th {
+  font-weight: 500;
+  user-select: none;
+  text-transform: capitalize;
+  color: rgb(97 102 120 / 45%);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.card table th i {
+  font-size: 11px;
+  translate: 0 -1px;
+  margin-left: 2px;
+}
+
+.card table th:is(.active, :hover) {
+  color: inherit;
+}
+
+.card table td {
+  opacity: 0.75;
+}
+
+.card table tr {
+  border-bottom: 1px solid #e9e5f3;
+}
+
+.card table tbody tr:last-child {
+  border: 0;
+}
+
+.card table tbody tr:nth-child(odd) {
+  background: rgb(97 102 120 / 4%);
+}
